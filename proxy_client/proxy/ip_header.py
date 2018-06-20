@@ -5,7 +5,7 @@ from ctypes import *
 Protocol_map = {1 : "ICMP", 6: "TCP", 17 : "UDP"}
 
 
-class IP(Structure):
+class IPHeader(Structure):
     _fields_ = [
         ("ihl", c_ubyte, 4),
         ("version", c_ubyte, 4),
